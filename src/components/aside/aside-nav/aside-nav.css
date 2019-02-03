@@ -11,7 +11,7 @@ a {
   padding: var(--aside-padding);
 }
 
-a.active, aside nav a:hover {
+a.active, a:hover {
   background: var(--color-primary-dark);
   border-left: var(--aside-highlight-width) solid var(--font-color-inverse);
   padding-left: calc(var(--aside-padding) - var(--aside-highlight-width));
