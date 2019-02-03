@@ -1,0 +1,16 @@
+@import url('../../../variables.css');
+
+:host {
+  display: flex;
+  align-items: center;
+}
+
+i {
+  color: var(--font-color-light);
+  position: absolute;
+  margin-left: calc(var(--font-size) / 2);
+}
+
+input {
+  padding-left: calc(2*var(--font-size));
+}

@@ -1,0 +1,50 @@
+@import url('./variables.css');
+
+.entry {
+  display: grid;
+  grid-template-columns: var(--aside-width) auto;
+  grid-template-rows: var(--header-height) auto auto;
+  grid-template-areas:
+  "aside header"
+  "aside main"
+  "aside footer";
+}
+
+aside {
+  background: var(--color-primary);
+  color: var(--font-color-inverse);
+  grid-area: aside;
+  height: 100%;
+}
+
+header {
+  grid-area: header;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 var(--main-side-pad);
+}
+
+main {
+  grid-area: main;
+  background: var(--color-backgroud-alt);
+  padding: var(--main-vertical-pad);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+main .contents {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+
+footer {
+  grid-area: footer;
+  background: var(--font-color-primary);
+  color: var(--font-color-alt);
+  display: flex;
+  flex-direction: column;
+  padding: var(--main-vertical-pad);
+}

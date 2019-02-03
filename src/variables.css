@@ -1,3 +1,5 @@
+@import url('https://use.fontawesome.com/releases/v5.7.1/css/all.css');
+
 :root {
   --color-backgroud: #fff;
   --color-backgroud-alt: #eee;
@@ -21,4 +23,19 @@
   --border-radius-box: 5px;
   --border-radius-input: 2px;
   --card-flex-basis: 350px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+input[type="text"] {
+  border: 1px solid var(--font-color-light);
+  border-radius: var(--border-radius-input);
+  line-height: calc(var(--font-size) * 2);
+  color: var(--font-color-alt);
 }

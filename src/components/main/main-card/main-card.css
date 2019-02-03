@@ -1,0 +1,33 @@
+@import url('../../../variables.css');
+
+:host {
+  display: flex;
+  flex-direction: column;
+  flex-basis: var(--card-flex-basis);
+  background: var(--color-backgroud);
+  border: 1px solid var(--color-backgroud-alt);
+  border-radius: var(--border-radius-box);
+  padding: 30px;
+  margin-bottom: 20px;
+}
+
+.card-header {
+  padding-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--color-backgroud-alt);
+}
+
+.card-header .title {
+  font-size: var(--font-size-big);
+  font-weight: 500;
+}
+
+.card-header .controls button {
+  font-size: 10px;
+  padding: 3px 10px;
+  border: 1px solid var(--color-backgroud-alt);
+  border-radius: var(--border-radius-box);
+  background: var(--color-backgroud);
+}

@@ -1,0 +1,30 @@
+@import url('../../../variables.css');
+
+:host {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+}
+
+nav a {
+  margin-right: var(--breadcrumb-padding);
+  color: var(--color-primary);
+}
+
+nav a:last-child {
+  margin-right: 0;
+}
+
+nav a:not(:last-child):after {
+  color: var(--font-color-alt);
+  content: '/';
+  margin-left: var(--breadcrumb-padding);
+}
+
+nav a.disabled {
+  color: var(--font-color-primary);
+}

@@ -1,0 +1,9 @@
+@import url('../../../variables.css');
+
+:host {
+  display: flex;
+  align-items: center;
+  height: var(--header-height);
+  padding: 0 var(--aside-padding);
+  font-size: 25px;
+}

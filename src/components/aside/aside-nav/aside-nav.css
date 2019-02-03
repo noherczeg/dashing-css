@@ -1,0 +1,22 @@
+@import url('../../../variables.css');
+
+:host {
+  display: flex;
+  flex-direction: column;
+  margin-top: var(--main-side-pad);
+}
+
+a {
+  color: var(--font-color-inverse);
+  padding: var(--aside-padding);
+}
+
+a.active, aside nav a:hover {
+  background: var(--color-primary-dark);
+  border-left: var(--aside-highlight-width) solid var(--font-color-inverse);
+  padding-left: calc(var(--aside-padding) - var(--aside-highlight-width));
+}
+
+a i {
+  margin-right: 5px;
+}

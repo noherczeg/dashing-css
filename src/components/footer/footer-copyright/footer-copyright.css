@@ -1,0 +1,7 @@
+@import url('../../../variables.css');
+
+:host {
+  display: flex;
+  justify-content: end;
+  margin-top: var(--footer-margin-top);
+}

@@ -1,0 +1,14 @@
+@import url('../../../variables.css');
+
+:host {
+  display: flex;
+  flex-direction: row;
+}
+
+.sitemap-entry {
+  flex-basis: 100%;
+}
+
+.sitemap-entry h4 {
+  margin-top: 0;
+}

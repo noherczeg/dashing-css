@@ -1,0 +1,34 @@
+@import url('../../../variables.css');
+
+:host {
+  display: flex;
+}
+
+.notifications {
+  margin-right: 25px;
+}
+
+.notifications i {
+  font-size: 20px;
+  position: relative;
+}
+
+.notifications i span {
+  font-size: calc(var(--font-size) * 0.7);
+  padding: 3px;
+  background: #c77;
+  border-radius: 50%;
+  color: var(--font-color-inverse);
+  position: absolute;
+  right: -7px;
+  top: -4px;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+}
+
+.user a, .user a:hover {
+  color: var(--font-color-primary);
+}
