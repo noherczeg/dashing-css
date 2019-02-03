@@ -1,0 +1,24 @@
+:root {
+  --color-backgroud: #fff;
+  --color-backgroud-alt: #eee;
+  --color-primary: rgb(47, 80, 117);
+  --color-primary-dark: rgb(38, 63, 110);
+  --font-size: 13px;
+  --font-size-big: 16px;
+  --font-color-primary: #333;
+  --font-color-light: #ccc;
+  --font-color-alt: #999;
+  --font-color-inverse: #fff;
+  --font-family: Roboto, 'sans-serif';
+  --header-height: 60px;
+  --aside-padding: 20px;
+  --aside-highlight-width: 3px;
+  --aside-width: 260px;
+  --main-side-pad: 20px;
+  --main-vertical-pad: 20px;
+  --breadcrumb-padding: 8px;
+  --footer-margin-top: 30px;
+  --border-radius-box: 5px;
+  --border-radius-input: 2px;
+  --card-flex-basis: 350px;
+}
