@@ -3,12 +3,11 @@
 :host {
   display: flex;
   flex-direction: column;
-  flex-basis: var(--card-flex-basis);
+  justify-content: space-between;
   background: var(--color-backgroud);
   border: 1px solid var(--color-backgroud-alt);
   border-radius: var(--border-radius-box);
   padding: 30px;
-  margin-bottom: 20px;
 }
 
 .card-header {
@@ -30,4 +29,8 @@
   border: 1px solid var(--color-backgroud-alt);
   border-radius: var(--border-radius-box);
   background: var(--color-backgroud);
+}
+
+.card-body {
+  height: 100%;
 }

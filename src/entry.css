@@ -1,6 +1,7 @@
 @import url('./variables.css');
 
 .entry {
+  height: 100vh;
   display: grid;
   grid-template-columns: var(--aside-width) auto;
   grid-template-rows: var(--header-height) auto auto;
@@ -31,13 +32,25 @@ main {
   padding: var(--main-vertical-pad);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 
 main .contents {
-  display: flex;
-  justify-content: space-between;
-  flex-flow: row wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+
+@media (max-width: 1600px) {
+  main .contents {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 1024px) {
+  main .contents {
+    grid-template-columns: 1fr;
+  }
 }
 
 footer {
