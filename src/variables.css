@@ -1,4 +1,5 @@
 @import url('https://use.fontawesome.com/releases/v5.7.1/css/all.css');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 
 :root {
   --color-backgroud: #fff;
@@ -11,7 +12,7 @@
   --font-color-light: #ccc;
   --font-color-alt: #999;
   --font-color-inverse: #fff;
-  --font-family: Roboto, 'sans-serif';
+  --font-family: 'Roboto', sans-serif;
   --header-height: 60px;
   --aside-padding: 20px;
   --aside-highlight-width: 3px;
@@ -22,7 +23,6 @@
   --footer-margin-top: 30px;
   --border-radius-box: 5px;
   --border-radius-input: 2px;
-  --card-flex-basis: 350px;
 }
 
 * {
