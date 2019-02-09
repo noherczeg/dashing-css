@@ -1,0 +1,24 @@
+{
+  "name": "dashing-css",
+  "version": "0.1.0",
+  "description": "A standard Dashboard built with up-to-date CSS techniques.",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.26.3"
+  },
+  "scripts": {
+    "start": "browser-sync src -w",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/noherczeg/dashing-css.git"
+  },
+  "keywords": [],
+  "author": "Norbert Csaba Herczeg<noherczeg@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/noherczeg/dashing-css/issues"
+  },
+  "homepage": "https://github.com/noherczeg/dashing-css#readme"
+}

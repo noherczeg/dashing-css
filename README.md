@@ -4,7 +4,10 @@ A standard Dashboard built with up-to-date CSS techniques.
 
 ## Start
 
-Open `src/index.html` in any evergreen browser.
+```
+npm install
+npm start
+```
 
 ## Used Technologies
 * [CSS Grid Layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout)
