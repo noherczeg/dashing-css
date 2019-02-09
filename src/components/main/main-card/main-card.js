@@ -10,7 +10,7 @@ export class Card extends HTMLElement {
         @import url('./components/main/main-card/main-card.css');
       </style>
       <div class="card-header">
-        <div class="title">Card One</div>
+        <div class="title"><slot name="card-title">Card Title</slot></div>
         <div class="controls">
           <button type="button">
               <i class="fas fa-window-minimize"></i>
@@ -25,11 +25,11 @@ export class Card extends HTMLElement {
       </div>
       <div class="card-body">
         <p>
-            Vestibulum auctor pharetra gravida. Sed dapibus augue eget velit imperdiet dapibus nec eget dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum auctor blandit condimentum. Sed viverra massa eu lobortis scelerisque. Nullam scelerisque posuere mi non auctor. Sed imperdiet lectus sit amet orci dictum posuere a sit amet turpis. Morbi quis congue arcu, nec euismod leo. Integer facilisis eros magna. Curabitur et velit urna. Morbi tempor nibh id cursus ultricies. Donec at gravida tortor. Praesent fringilla tempor dui, vitae sodales turpis tristique sed. 
+          <slot name="card-body">Card Body</slot>
         </p>
       </div>
       <div class="card-footer">
-        <small>Some notes here just to fill in some space lol</small>
+        <small><slot name="card-footer">Card Footer</slot></small>
       </div>
     `;
   }
