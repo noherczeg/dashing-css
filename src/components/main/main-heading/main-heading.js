@@ -11,11 +11,22 @@ export class Heading extends HTMLElement {
       </style>
       <h2>Dashboard</h2>
       <nav>
-        <a href="#">Home</a>
-        <a href="#">Next</a>
-        <a href="#" class="disabled">Last</a>
+        ${this.breadcrumbs.map(({ title, url, active }) => {
+          if (active) {
+            return `<a href="javascript:void(0);" class="disabled">${title}</a>`;
+          }
+          return `<a href="${url}">${title}</a>`;
+        }).join('')}
       </nav>
     `;
+  }
+
+  get breadcrumbs() {
+    return [
+      { title: 'Home', url: '#' },
+      { title: 'Next', url: '#next' },
+      { title: 'Last', active: true },
+    ];
   }
 }
 
