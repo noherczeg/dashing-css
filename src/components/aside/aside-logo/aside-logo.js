@@ -10,6 +10,7 @@ export class Logo extends HTMLElement {
         @import url('./components/aside/aside-logo/aside-logo.css');
       </style>
       <span class="logo">LOGO</span>
+      <span class="logo-collapsed">L</span>
     `;
   }
 }

@@ -8,8 +8,16 @@
   font-size: 25px;
 }
 
+.logo-collapsed {
+  display: none;
+}
+
 @media only screen and (max-width: 768px) {
   .logo {
     display: none;
+  }
+
+  .logo-collapsed {
+    display: block;
   }
 }
