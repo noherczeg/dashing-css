@@ -11,6 +11,12 @@
   "aside footer";
 }
 
+@media only screen and (max-width: 768px) {
+  .entry {
+    grid-template-columns: var(--aside-width-collapsed) auto;
+  }
+}
+
 aside {
   background: var(--color-primary);
   color: var(--font-color-inverse);

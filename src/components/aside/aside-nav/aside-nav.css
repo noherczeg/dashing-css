@@ -6,6 +6,12 @@
   margin-top: var(--main-side-pad);
 }
 
+@media only screen and (max-width: 768px) {
+  .label {
+    display: none;
+  }
+}
+
 a {
   color: var(--font-color-inverse);
   padding: var(--aside-padding);

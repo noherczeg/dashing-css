@@ -7,3 +7,9 @@
   padding: 0 var(--aside-padding);
   font-size: 25px;
 }
+
+@media only screen and (max-width: 768px) {
+  .logo {
+    display: none;
+  }
+}

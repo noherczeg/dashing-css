@@ -5,6 +5,12 @@
   flex-direction: row;
 }
 
+@media only screen and (max-width: 768px) {
+  :host {
+    flex-direction: column;
+  }
+}
+
 .sitemap-entry {
   flex-basis: 100%;
 }
