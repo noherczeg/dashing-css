@@ -10,11 +10,11 @@ import './components/footer/footer-copyright/footer-copyright.js';
 export class Entry extends HTMLElement {
   constructor() {
     super();
-    this.shadow = this.attachShadow({ mode: 'open' });
+    this.attachShadow({ mode: 'open' });
   }
 
   connectedCallback() {
-    this.shadow.innerHTML = `
+    this.shadowRoot.innerHTML = `
       <style>
         @import url('./entry.css');
       </style>

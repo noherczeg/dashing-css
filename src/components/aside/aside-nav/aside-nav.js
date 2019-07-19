@@ -1,17 +1,17 @@
 export class Nav extends HTMLElement {
   constructor() {
     super();
-    this.shadow = this.attachShadow({ mode: 'open' });
+    this.attachShadow({ mode: 'open' });
   }
 
   connectedCallback() {
-    this.shadow.innerHTML = `
+    this.shadowRoot.innerHTML = `
       <style>
         @import url('./components/aside/aside-nav/aside-nav.css');
       </style>
       ${this.navs.map(({ title, url, icon, active }) => `
         <a href="${url}" class="${active ? 'active' : ''}">
-          <i class="${icon}"></i> ${title}
+          <i class="${icon}"></i> <span class="label">${title}</span>
         </a>
       `).join('')}
     `;

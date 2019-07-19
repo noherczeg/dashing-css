@@ -1,15 +1,15 @@
 export class Logo extends HTMLElement {
   constructor() {
     super();
-    this.shadow = this.attachShadow({ mode: 'open' });
+    this.attachShadow({ mode: 'open' });
   }
 
   connectedCallback() {
-    this.shadow.innerHTML = `
+    this.shadowRoot.innerHTML = `
       <style>
         @import url('./components/aside/aside-logo/aside-logo.css');
       </style>
-      LOGO
+      <span class="logo">LOGO</span>
     `;
   }
 }

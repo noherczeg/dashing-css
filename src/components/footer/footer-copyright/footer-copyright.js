@@ -1,11 +1,11 @@
 export class CopyRight extends HTMLElement {
   constructor() {
     super();
-    this.shadow = this.attachShadow({ mode: 'open' });
+    this.attachShadow({ mode: 'open' });
   }
 
   connectedCallback() {
-    this.shadow.innerHTML = `
+    this.shadowRoot.innerHTML = `
       <style>
         @import url('./components/footer/footer-copyright/footer-copyright.css');
       </style>
